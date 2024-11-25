@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-cormorant">
+    <nav class="nav">
+      <div class="container">
+        
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login/Sign Up</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Job Listing</a></li>
+            <li><a href="#">Work Submissions</a></li>
+            <li><a href="#">Community Page</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+    
+    <main>
+      <section class="hero">
+          <div class="hero-content">
+              
+              <h1 class="hero-title">WorkBridge</h1>
+              <p class="hero-text">Spark Industries is revolutionizing the spirulina industry with our premium-quality products and commitment to sustainability.
+
+              </p>
+          </div>
+      </section>
+      <section class="products">
+        <div class="products-content">
+            <div class="products-header">
+                <h2 class="products-title">Our Spirulina Products</h2>
+                <p class="products-description">At WorkBridge we empower housewives and elderly individuals from underprivileged backgrounds by connecting their talents to meaningful work-from-home opportunities. Every skill matters, fostering financial independence, growth, and purpose.</p>
+            </div>
+            
+    </section>
+    
+   
+  <div style="height: auto; padding: 2rem">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 md:p-12 lg:p-16">
+    <div class="col-span-2 row-span-2 relative">
+      <h2 class="text-5xl md:text-7xl font-bold leading-tight mb-2 typewriter-title" data-text="WorkBridge:Empowering Lives, One Skill at a Time">
+      </h2>
+      <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-[600px] typewriter-paragraph" data-text="At WorkBridge, we are on a mission to redefine opportunities for housewives and elderly individuals, particularly those from underprivileged backgrounds. We believe that every skill, no matter how simple, has the power to create a profound impact. Our platform connects talented individuals with meaningful work-from-home opportunities in non-tech fields, enabling financial independence, personal growth, and a renewed sense of purpose.">
+      </p>
+      
+    </div>
+    <div class="relative">
+      <h3 class="text-3xl md:text-4xl font-bold leading-tight mb-2 typewriter-title" data-text="Our Vision?">
+      </h3>
+      <p class="text-sm md:text-base text-gray-500 dark:text-gray-400 typewriter-paragraph" data-text="
+      To build a world where every skill is celebrated and valued, regardless of age or background.
+      We envision a future where financial independence is accessible to everyone, enabling individuals to contribute to their communities while achieving personal fulfillment.">
+      </p>
+    </div>
+    <div class="relative">
+      <h3 class="text-3xl md:text-4xl font-bold leading-tight mb-2 typewriter-title" data-text="Our Mission?">
+      </h3>
+      <p class="text-sm md:text-base text-gray-500 dark:text-gray-400 typewriter-paragraph" data-text="
+      To create an inclusive, user-friendly platform that bridges the gap between skilled individuals and work-from-home opportunities.
+
+      By leveraging innovative technology, community-driven support, and a focus on non-tech fields, we empower individuals to discover their potential and achieve their goals.">
+      </p>
+    </div>
+    <div class="relative">
+      <h2 class="text-5xl md:text-7xl font-bold leading-tight mb-2 typewriter-title" data-text="Who We Serve">
+      </h2>
+      <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-[600px] typewriter-paragraph" data-text="Housewives Elderly Individuals Underprivileged Communities
+      Small Businesses
+      NGOs
+      
+      ">
+      </p>
+      
+
+    </div>
+    <div class="relative">
+      <h3 class="text-3xl md:text-4xl font-bold leading-tight mb-2 typewriter-title" data-text="Premium Quality, Every Time. Our Commitment to Excellence.">
+      </h3>
+      <p class="text-sm md:text-base text-gray-500 dark:text-gray-400 typewriter-paragraph" data-text="Quality is our primary goal! 💪 Experience the pure power of spirulina, delivered with unwavering excellence every time. ✨">
+      </p>
+    </div>
+  </div>
+
+    
+  </div>
+
+  <div class="slideshow-container">
+    
+   
+    
+    <!-- <div class="Slides fade">
+      <div class="numbertext"></div>
+      <img src="SlideShowImages/image4.jpeg" style="width: 100%" />
+      <div class="text"></div>
+    </div> -->
+    <div class="Slides fade">
+      <div class="numbertext"></div>
+     
+
+      <!-- <div class="text">Caption Five</div> -->
+    </div>
+    <div class="dots" style="text-align: center">
+      
+      <!-- <span class="dot"></span> -->
+      <span class="dot"></span>
+    </div>
+  </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings
+  and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
+    </script>
+    <script src="scripts.js"></script>
+    <footer class="footer">
+      <div>&copy; 2024 WorkBridge. All rights reserved.</div>
+  </footer>
+  </body>
+</html>
