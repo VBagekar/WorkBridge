@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodMate - Login & Signup</title>
+  <link rel="stylesheet" href="signupForm.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="form-container" id="login-container">
+      <h1>Welcome to MoodMate</h1>
+      <form id="login-form">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+        <button type="submit" class="btn">Login</button>
+        <p>Don't have an account? <span id="switch-to-signup">Sign up here</span></p>
+      </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-container" id="signup-container" style="display: none;">
+      <h1>Welcome Back to MoodMate</h1>
+      <form id="signup-form">
+        <label for="signup-name">Full Name</label>
+        <input type="text" id="signup-name" placeholder="Enter your full name" required>
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" placeholder="Create a password" required>
+        <button type="submit" class="btn">Sign Up</button>
+        <p>Already have an account? <span id="switch-to-login">Login here</span></p>
+      </form>
+    </div>
+  </div>
+  <script src="signupForm.js"></script>
+</body>
+</html>
