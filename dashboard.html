@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Mood Tracker Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-image">
+        <img src="https://plus.unsplash.com/premium_photo-1669138141090-16f90f7dc839?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGhhcHB5fGVufDB8fDB8fHww" alt="Happy">
+      </div>
+      <div class="header-text">
+        <h1>Welcome, <span id="user-name">John</span>!</h1>
+        <!-- <div class="name-change">
+          <input type="text" id="name-input" placeholder="Enter your name">
+          <button id="change-name-btn">Change Name</button>
+        </div> -->
+        <p class="quote" id="motivational-quote">"The best way to predict the future is to create it."</p>
+      </div>
+    </header>
+
+    <!-- Mood Overview -->
+    <section class="dashboard-overview">
+      <div class="card">
+        <h2>Average Mood</h2>
+        <p>7.8 <span class="trend">+2%</span></p>
+      </div>
+      <div class="card">
+        <h2>Chat Sessions</h2>
+        <p>24 <span class="trend">+12%</span></p>
+      </div>
+    </section>
+
+    <!-- Mood History -->
+    <section class="mood-history">
+      <h2>Mood History</h2>
+      <canvas id="moodChart"></canvas>
+    </section>
+
+    <!-- Chat History -->
+    <section class="chat-history">
+      <h2>Chat History</h2>
+      <div class="chat-container">
+        <p><strong>John:</strong> I’m feeling a bit low today.</p>
+        <p><strong>AI:</strong> That’s okay. Let’s talk about it!</p>
+        <p><strong>John:</strong> Sure, I’d like that.</p>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations">
+      <h2>Recommendations</h2>
+      <ul>
+        <li>Take a 10-minute walk outside to refresh your mind.</li>
+        <li>Practice deep breathing exercises for 5 minutes.</li>
+        <li>Listen to a calming playlist.</li>
+      </ul>
+    </section>
+
+    <!-- Images Section -->
+    <section class="inspiration">
+      <h2>Stay Inspired</h2>
+      <div class="image-grid">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhbG0lMjBhbmQlMjBoYXBweXxlbnwwfHwwfHx8MA%3D%3D" alt="Calm and Happy 1">
+          <p>Find your peace in the present.</p>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1524293568345-75d62c3664f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGhhcHB5fGVufDB8fDB8fHww" alt="Calm and Happy 2">
+          <p>Happiness blooms from within.</p>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1514845505178-849cebf1a91d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGhhcHB5fGVufDB8fDB8fHww" alt="Calm and Happy 4">
+          <p>Every day is a fresh start.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Mood Tracker. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
